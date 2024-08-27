@@ -1,0 +1,40 @@
+.cont2 h2{
+    text-align: center;
+    margin: 0;
+    padding: 2% 0;
+    color:#232323;
+    background-color: #f3f3f3;
+}
+.cont2 p{
+    color: #888888;
+    line-height: 300%;
+    padding: 0 1%;
+}
+
+.cont3{
+    width: 100%;
+    background-color: #fff;
+}
+.cont3 h2{
+    text-align: center;
+    margin: 20px 0;
+    color:#232323;
+    background-color: #f3f3f3;
+}
+.cont3 p{
+    color: #888888;
+    line-height: 300%;
+}
+
+/* .cont1:hover ~ .cont2,
+.cont1:hover ~ .cont3{
+    opacity: 0.5;
+}
+.cont2:hover ~ .cont1,
+.cont2:hover ~ .cont3{
+    opacity: 0.5;
+}
+.cont3:hover ~ .cont2,
+.cont3:hover ~ .cont1{
+    opacity: 0.5;
+} */
