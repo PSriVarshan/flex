@@ -95,7 +95,7 @@ li a:hover{
     line-height: 300%;
     padding: 0 1%;
 }
-button{
+.container button{
     background-color: #8aba56;
     color: #f3f3f3;
     width: 100%;
@@ -109,18 +109,122 @@ button{
 .cont1:hover,.cont2:hover,.cont3:hover{
     opacity: 1;
 }
-.content,.maincont{
+.content{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0 10%;
 }
 .content h2{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
-.contimg img{
-    width: 100%;
-    image-orientation: 90;
+.content button{
+    background-color: transparent;
+    padding: 1%;
+    border-style: groove;
+    border-color: #8aba56;
+    color: #8aba56;
+    margin: 0.5%;
+} 
+.absol{
+    max-width: 500px;
+    text-align: center;
 }
-.cont3c1 img{
-    width: 10%;
+.txt{
+    position: absolute;
+    max-width: 500px;
+    margin-top: -175px;
+    background-color: #23232384;
+}
+.contenth2{
+    max-width: 50%;
+}
+.mt1{
+    display:flex ;
+    justify-content: space-evenly;
+    padding-bottom: 2%;
+}
+.mt1 img{
+    padding: 10px;
+    justify-content: center;
+    border: solid;
+    border-color: #888888;
+    margin: 0 10px;
+}
+.mt1 p{
+    line-height: 80%;
+}
+.mt1 h4{
+    margin:2px;
+}
+.greenname{
+    color: #8aba56;
+}
+.author{
+    font-size: 13px;
+}
+.b4last{
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 0 10%;
+    & p{
+        font-size: 20px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    & h2{
+        margin:20px 0;
+        padding-top: 30px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+}
+.twocont{
+    display: flex;
+    justify-content: space-between;
+    max-height: 150px;
+    & img{
+        margin-right:  10px;
+    }
+}
+.org,.blu{
+    display: flex;
+    width: 48%;
+}
+.org{
+    background-color: #f0ad4e;
+}
+.twocont button{
+    background-color: transparent;
+    padding: 1%;
+    border-style: groove;
+    border-color: #fff;
+    color: #fff;
+    margin: 0.5%;
+}
+.blu{
+    background-color: #6fd2e5;
+}
+.twotext{
+    text-align: left;
+}
+.lst{
+    background-color: #232323;
+    color:#888888;
+    display: flex;
+    padding: 2% 10%;
+    justify-content: space-between;
+    & h3{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
+.lst1{
+    max-width:48%;
+}
+.det{
+    line-height: 250%;
+}
+.lst2 nav{
+    color: #8aba56;
+    & ul{
+        display: flex;
+        flex-direction: column;
+    }
 }
