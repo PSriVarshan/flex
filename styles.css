@@ -101,7 +101,6 @@ li:hover{
     padding: 6% 0;
     text-align: center;
     border-style: none;
-    
 }
 .cont2{
     margin: 0 5%;
@@ -305,16 +304,17 @@ li:hover{
             visibility: hidden;
             position: absolute;
         }
-        & ion-icon{
+    }
+    
+    .logorow ion-icon{
+        visibility: visible;
+        font-size: 25px;
+    }
+    .logorow ion-icon:hover{
+        z-index: 1;
+        & nav {
             visibility: visible;
-            font-size: 25px;
-        }
-        & ion-icon:hover{
-            z-index: 1;
-            & nav {
-                visibility: visible;
-                position: absolute;
-            }
+            position: absolute;
         }
     }
     li{
