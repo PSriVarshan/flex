@@ -3,6 +3,7 @@
 }
 .smallhead{
     display: flex;
+    width: 100%;
     color: #888888;
     background: #232323;
     padding: 0.33% 0;
@@ -28,6 +29,10 @@
     font-style: italic;
     flex-wrap: wrap;
     justify-content: space-between;
+    & ion-icon{
+        visibility: hidden;
+        position: absolute;
+    }
 }
 .logo{
     display: flex;
@@ -66,12 +71,6 @@ li:hover{
     color:#fff;
     cursor: pointer;
 }
-li a{
-    color: #000;
-}
-li a:hover{
-    color:#fff;
-}
 .container{
     display: flex;
     background-color: #232323;
@@ -102,6 +101,7 @@ li a:hover{
     padding: 6% 0;
     text-align: center;
     border-style: none;
+    
 }
 .cont2{
     margin: 0 5%;
@@ -120,7 +120,7 @@ li a:hover{
 .content button{
     background-color: transparent;
     padding: 1%;
-    border-style: groove;
+    border-style: solid;
     border-color: #8aba56;
     color: #8aba56;
     margin: 0.5%;
@@ -142,6 +142,8 @@ li a:hover{
     display:flex ;
     justify-content: space-evenly;
     padding-bottom: 2%;
+    border-bottom: 2px solid #888888;
+    margin-bottom: 15px;
 }
 .mt1 img{
     padding: 10px;
@@ -149,6 +151,8 @@ li a:hover{
     border: solid;
     border-color: #888888;
     margin: 0 10px;
+    max-width: 100%;
+    height: auto;
 }
 .mt1 p{
     line-height: 80%;
@@ -194,9 +198,9 @@ li a:hover{
 .twocont button{
     background-color: transparent;
     padding: 1%;
-    border-style: groove;
-    border-color: #fff;
-    color: #fff;
+    border-style: solid;
+    border-color: #f3f3f3;
+    color: #f3f3f3;
     margin: 0.5%;
 }
 .blu{
@@ -204,6 +208,7 @@ li a:hover{
 }
 .twotext{
     text-align: left;
+    color: #fff;
 }
 .lst{
     background-color: #232323;
@@ -213,18 +218,181 @@ li a:hover{
     justify-content: space-between;
     & h3{
         font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #111111;
     }
 }
 .lst1{
-    max-width:48%;
+    max-width:45%;
 }
 .det{
     line-height: 250%;
 }
-.lst2 nav{
-    color: #8aba56;
-    & ul{
+.lst2 {
+    width: 25%;
+    & nav {
+        color: #8aba56;
+        margin-left: -15%;
+        & ul {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+        }
+    }
+}
+.lst3 {
+    width: 25%;
+}
+.lst3co{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.mail {
+    display: flex;
+    flex-direction: column;
+    & input{
+    background-color:#111111;
+    border: none;
+    padding: 8px 5px;
+    width: 90%;
+    }
+}
+.sub {
+    & input{
+        background-color: #8aba56;
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 5px;
+        width: 30%;
+    }
+}
+.ico{
+    margin-top: 50px;
+    color: #888888;
+    background-color: #111111;
+    padding: 8px;
+    width: 53%;
+}
+.footer{
+    background-color: #111111;
+    color:#888888;
+    padding: 2% 10%;
+}
+
+@media (max-width:600px) {
+
+    .smallhead {
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+    .hea {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .der {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logorow {
+        & nav {
+            background-color: #deead2;
+            visibility: hidden;
+            position: absolute;
+        }
+        & ion-icon{
+            visibility: visible;
+            font-size: 25px;
+        }
+        & ion-icon:hover{
+            z-index: 1;
+            & nav {
+                visibility: visible;
+                position: absolute;
+            }
+        }
+    }
+    li{
+        padding: 10px;
         display: flex;
         flex-direction: column;
+    }
+
+    .logo {
+        width: 100%;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .cont1, .cont2, .cont3{
+        opacity: 1;
+    }
+    .cont2{
+        margin: 25px 0;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .absol{
+        & img{
+            width: 100%;
+        }
+        & img:hover{
+            .txt{
+                visibility: visible;
+            }
+        }
+    }
+    .content{
+        text-align: center;
+    }
+    .txt{
+        font-size: inherit;
+        position: relative;
+        max-width: 100%;
+        margin-top: -200px;
+        background-color: #deead2;
+        visibility: hidden;
+    }
+    .contenth2{
+        max-width: 100%;
+    }
+    .mt1{
+        flex-direction: column;
+    }
+    .twocont{
+        flex-direction: column;
+        max-height: none;
+        & img{
+            max-width: 100%;
+            margin-right: -10px;
+            border: 2px solid #fff;
+        }
+        & div{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    .twotext{
+        text-align:  center;
+        color: #fff;
+    }
+    .lst{
+        flex-direction: column;
+    }
+    .lst1, .lst2, .lst3{
+        width: 100%;
+    }
+    .mail{
+        margin-bottom: 30px;
+    }
+    .ico{
+        text-align: center;
     }
 }
