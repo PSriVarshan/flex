@@ -150,7 +150,7 @@ li:hover{
     justify-content: center;
     border: solid;
     border-color: #888888;
-    margin: 0 15px;
+    margin: 0 50px 0 0;
     max-width: 100%;
     height: auto;
 }
